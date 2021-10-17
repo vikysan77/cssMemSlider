@@ -36,17 +36,7 @@ body{
     background: #191007;
     margin: 0 auto;
 }
-h1 {
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-size: 26px;
-  font-family: "Forum";
-  line-height: 40px;
-  font-weight: 400;
-  letter-spacing: 5px;
-  text-align: center;
-  color: azure;
-}
+
 p{
   font-family: Roboto;
   font-style: normal;
@@ -181,3 +171,188 @@ p{
     max-width: 800px;
     display: block;
   }
+
+
+  @media screen and (max-width:768px) {
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+
+  .carousel {
+   max-width: 768px;
+   min-width: 320px;
+    width: 100%;
+    right: 0;
+    height: auto;
+    position: absolute;
+   
+  }
+  img {
+    max-width: 768px;
+    height: auto;
+    width: auto\9; /* ie8 */
+ }
+ .slides img {
+  width: 100%;
+  height: auto;
+  
+  border-radius: 1%;
+}
+.texth {
+  position: inherit;
+  top: 700px;
+ text-align: center;
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+}
+
+.texth p{
+  position: inherit;
+  left: 0;
+  color: blanchedalmond;
+  width: 100%;
+  transition: all 0.5s;
+  overflow: hidden;
+  display: none;
+  text-align: center;
+}
+.click {
+  position: inherit;
+ top: 600px;
+  left: 0;
+
+   text-align: center;
+   width: 100%;
+   max-width: 768px;
+ }
+ #button1:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+#button2:checked~.slider-inner .slides {
+  transform: translate(-768px);
+}
+
+#button3:checked~.slider-inner .slides {
+  transform: translate(-1536px);
+}
+#button4:checked~.slider-inner .slides {
+  transform: translate(-2304px);
+}
+}
+
+@media screen and (max-width:425px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.carousel {
+ max-width: 425px;
+ min-width: 320px;
+  width: 100%;
+  right: 0;
+  height: auto;
+  position: absolute;
+ 
+}
+img {
+  max-width: 425px;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+.slides img {
+width: 100%;
+height: auto;
+
+border-radius: 1%;
+}
+.texth {
+position: inherit;
+top: 450px;
+text-align: center;
+width: 100%;
+max-width: 425px;
+height: auto;
+}
+.texth p{
+position: inherit;
+left: 0;
+color: blanchedalmond;
+width: 100%;
+transition: all 0.5s;
+overflow: hidden;
+display: none;
+text-align: center;
+}
+.texth p{
+position: inherit;
+left: 0;
+color: blanchedalmond;
+width: 100%;
+transition: all 0.5s;
+overflow: hidden;
+display: none;
+text-align: center;
+}
+p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.click {
+position: inherit;
+top: 350px;
+left: 0;
+
+ text-align: center;
+ width: 100%;
+ max-width: 425px;
+}
+#button1:checked~slider-inner slides {
+transform: translate(0);
+}
+
+#button2:checked~.slider-inner .slides {
+transform: translate(-425px);
+}
+
+#button3:checked~.slider-inner .slides {
+transform: translate(-850px);
+}
+#button4:checked~.slider-inner .slides {
+transform: translate(-1275px);
+}
+#button1:checked~ .texth .text-slides1 {
+  transform: translate(10px);
+  max-width: 415px;
+  display: block;
+  }
+
+#button2:checked~.texth .text-slides2 {
+  transform: translate(10px);
+  max-width: 415px;
+  display: block;
+}
+
+#button3:checked~.texth .text-slides3 {
+  transform: translate(10px);
+  max-width: 415px;
+  display: block;
+
+
+}
+#button4:checked~.texth .text-slides4{
+  transform: translate(10px);
+  max-width: 415px;
+  display: block;
+}
+
+}

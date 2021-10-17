@@ -1,14 +1,66 @@
-body{
-    background: plum;
-    margin: 0 auto;
-}
-h1{
-    text-align: center;
+@font-face {
+  font-family: Forum;
+  src: url("assets/fonts/Forum-Regular.ttf");
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+
+
+
+
+
+body{
+    background: #191007;
+    margin: 0 auto;
+}
+h1 {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: "Forum";
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+  color: azure;
+}
+p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0;
+}
   .carousel {
     position: relative;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0px auto;
    
   }
@@ -19,41 +71,60 @@ h1{
   
   .click {
    position: inherit;
-   top: 870px;
-    left: 0;
-    bottom: -40px;
+  top: 920px;
+    left: 980px;
+
     text-align: right;
     width: 100%;
+    max-width: 300px;
+  }
+  .texth {
+    position: inherit;
+    top: 890px;
+   text-align: right;
+    width: 100%;
+    max-width: 800px;
+    height: 30px;
+  }
+  .texth p{
+    position: inherit;
+    left: 0;
+    color: blanchedalmond;
+    width: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+    display: none;
+    text-align: left;
   }
   
   .click label {
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
     margin: 0 3px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .8);
+    box-shadow: 0 0 4px 0 rgba(129, 122, 121, 0.8);
     border-radius: 50%;
-    border: 4px solid #88168b;
-    background-color: #c089c7;
+    border: 4px solid #92887f;
+    background-color: #d4622d;
   }
   .click label:hover{
-    border: 4px solid rgb(56, 9, 75);
-    background-color: lightblue;
+    border: 4px solid rgb(102, 54, 9);
+    background-color: rgb(202, 201, 184);
   }
   #button1:checked~.click label[for="button1"] {
-    background-color: rgb(248, 12, 236);
+    background-color: #bb5e81;
   }
   
   #button2:checked~.click label[for="button2"] {
-    background-color: rgb(248, 12, 236);
+    background-color: #bb5e81;
   }
   
   #button3:checked~.click label[for="button3"] {
-    background-color: rgb(248, 12, 236);
+    background-color: #bb5e81;
   }
   #button4:checked~.click label[for="button4"] {
-    background-color: rgb(248, 12, 236);
+    background-color: #bb5e81;
   }
   .slider-inner {
     overflow: hidden;
@@ -85,4 +156,28 @@ h1{
   }
   #button4:checked~.slider-inner .slides {
     transform: translate(-3840px);
+  }
+  #button1:checked~ .texth .text-slides1 {
+    transform: translate(10px);
+    max-width: 800px;
+    display: block;
+    }
+  
+  #button2:checked~.texth .text-slides2 {
+    transform: translate(10px);
+    max-width: 800px;
+    display: block;
+  }
+  
+  #button3:checked~.texth .text-slides3 {
+    transform: translate(10px);
+    max-width: 800px;
+    display: block;
+  
+
+  }
+  #button4:checked~.texth .text-slides4{
+    transform: translate(10px);
+    max-width: 800px;
+    display: block;
   }

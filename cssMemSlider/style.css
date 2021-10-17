@@ -36,6 +36,9 @@ body{
     background: #191007;
     margin: 0 auto;
 }
+h1 {
+  display: none;
+}
 
 p{
   font-family: Roboto;
@@ -178,7 +181,17 @@ p{
       max-width: 100%;
       overflow-x: hidden;
   }
-
+  h1 {
+    display: block;
+    text-align: center;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: "Forum";
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
   .carousel {
    max-width: 768px;
    min-width: 320px;
@@ -248,7 +261,17 @@ p{
     max-width: 100%;
     overflow-x: hidden;
 }
-
+h1{
+  display: block;
+  text-align: center;
+  color: antiquewhite;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: "Forum";
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
 .carousel {
  max-width: 425px;
  min-width: 320px;
@@ -352,6 +375,119 @@ transform: translate(-1275px);
 #button4:checked~.texth .text-slides4{
   transform: translate(10px);
   max-width: 415px;
+  display: block;
+}
+
+}
+@media screen and (max-width:320px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+h1 {
+  display: block;
+  text-align: center;
+  color: antiquewhite;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: "Forum";
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.carousel {
+  max-width: 320px;
+  width: 100%;
+  right: 0;
+  height: auto;
+  position: absolute;
+ 
+}
+img {
+  max-width: 320px;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+.slides img {
+width: 100%;
+height: auto;
+
+border-radius: 1%;
+}
+.texth {
+position: inherit;
+top: 300px;
+text-align: center;
+width: 100%;
+max-width: 320px;
+height: auto;
+}
+.texth p{
+position: inherit;
+left: 0;
+color: blanchedalmond;
+width: 100%;
+transition: all 0.5s;
+overflow: hidden;
+display: none;
+text-align: center;
+}
+
+p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.click {
+position: inherit;
+top: 250px;
+left: 0;
+
+ text-align: center;
+ width: 100%;
+ max-width: 320px;
+}
+#button1:checked~slider-inner slides {
+transform: translate(0);
+}
+
+#button2:checked~.slider-inner .slides {
+transform: translate(-320px);
+}
+
+#button3:checked~.slider-inner .slides {
+transform: translate(-640px);
+}
+#button4:checked~.slider-inner .slides {
+transform: translate(-960px);
+}
+#button1:checked~ .texth .text-slides1 {
+  transform: translate(10px);
+  max-width: 320px;
+  display: block;
+  }
+
+#button2:checked~.texth .text-slides2 {
+  transform: translate(10px);
+  max-width: 320px;
+  display: block;
+}
+
+#button3:checked~.texth .text-slides3 {
+  transform: translate(10px);
+  max-width: 320px;
+  display: block;
+
+
+}
+#button4:checked~.texth .text-slides4{
+  transform: translate(10px);
+  max-width: 320px;
   display: block;
 }
 
